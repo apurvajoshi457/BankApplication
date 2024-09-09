@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBank</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            background-image: url('background1.jpg'); /* Path to your image */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+        }
+        .navbar {
+            margin-bottom: 50px;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+        .header-text {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: left; /* Aligns text to the left */
+            white-space: nowrap; /* Prevents text wrapping */
+            overflow: hidden; /* Ensures no overflow */
+            width: 25ch; /* Control text width for typewriter effect */
+            animation: typing 4.5s steps(25) 1s forwards; /* Typewriter effect */
+        }
+        .lead {
+            text-align: left; /* Aligns the subtext to the left */
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 25ch; } /* Length of the text to type out */
+        }
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="bank_logo.jpg" alt="Bank Logo" class="logo">
+            <strong>VelocityVault</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page Content -->
+    <div class="container">
+        <div class="row justify-content-start"> <!-- Align the row to the left -->
+            <div class="col-md-8">
+                <h1 class="header-text">Welcome to VelocityVault</h1>
+                <p class="lead">Your trusted partner in banking.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">New to VelocityVault?</h5>
+                        <p class="card-text">Sign up/Register an account with us today.</p>
+                        <a href="register.html" class="btn btn-primary">Get started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Already have an account?</h5>
+                        <p class="card-text">Login to access your account.</p>
+                        <a href="login.html" class="btn btn-secondary">Login Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

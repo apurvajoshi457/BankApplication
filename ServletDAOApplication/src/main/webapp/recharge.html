@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Mobile Recharge</title>
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .container {
+        max-width: 600px;
+        margin-top: 50px;
+        background: #ffffff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .btn-custom {
+        background-color: #007bff;
+        color: #fff;
+    }
+    .btn-custom:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Mobile Recharge</h2>
+        <form action="RechargeController">
+            <div class="form-group">
+                <label for="regNo">Enter account No:</label>
+                <input type="text" class="form-control" id="regNo" name="regNo">
+            </div>
+            <div class="form-group">
+                <label for="mobno">Enter Mobile Number:</label>
+                <input type="text" class="form-control" id="mobno" name="mobno">
+            </div>
+            <div class="form-group">
+                <label for="baltype">Select Plan:</label>
+                <select class="form-control" id="baltype" name="baltype">
+                    <option value="first">Rs.499 unlimited talktime+1.5GB/day valid for 29 days</option>
+                    <option value="second">Rs.699 unlimited talktime+1.5GB/day valid for 56 days</option>
+                    <option value="third">Rs.799 unlimited talktime+1.5GB/day valid for 80 days</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-custom btn-block">Recharge</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
